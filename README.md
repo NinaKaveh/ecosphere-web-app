@@ -13,4 +13,4 @@ In addition, the platform is dedicated to track COVID-19 news. You will be able 
 ## Our team
 We are a team of three ISEP students. This platform is a challenge for us, allowing us to show our skills in design, development and deployment of web applications.
 
-Our name: The Sorcerer, in reference to the famous suite of novels by Andrzej Sapkowski. 
+Our name: The Witcher, in reference to the famous suite of novels by Andrzej Sapkowski. 
