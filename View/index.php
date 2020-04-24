@@ -31,7 +31,7 @@
                 <td>
                     <button class="button" onclick="openLoginForm()">Login</button>
                     <div class="form-popup" id="loginForm">
-                        <form action="/action_page.php" class="form-container">
+                        <form action="/Controller/action_page.php" class="form-container">
                             <h1>Login</h1>
                             <label for="email"><b>Email</b></label>
                             <input type="text" placeholder="Enter Email" name="email" required>
@@ -49,7 +49,7 @@
                 <td>
                     <button class="button" onclick="openRegisterForm()">Register</button>
                     <div class="form-popup" id="registerForm">
-                        <form action="/action_page.php" class="form-container">
+                        <form action="/Controller/signup_check.php" class="form-container">
                             <h1>Register</h1>
                             <label for="lname"><b>Lastname</b></label>
                             <input type="text" placeholder="Enter Lastname" name="lname" required>

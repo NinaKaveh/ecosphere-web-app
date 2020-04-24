@@ -5,16 +5,11 @@
     <link rel="stylesheet" type="text/css" href="css/global.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="js/include_header_footer.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-
-
-
-    <style>
-    .first_row {float: left;}
-    .first_row section {width: 50%; float: left;}
-
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 </head>
 <body>
 <header>
@@ -26,88 +21,91 @@
 <main>
     <section id="description">
         <h1 style="text-align: center">Welcome!</h1>
-        <h3 style="text-align: center; margin-left: 10%; margin-right: 10%">This page is a dashboard containing some graphs, charts and histogram. You may
-            find here the latest data about the evolution of the pandemic.</h3>
-
+        <h3 style="text-align: center; margin-left: 10%; margin-right: 10%">This page is a dashboard containing some
+            graphs, charts and histogram. You may find here the latest data about the evolution of the pandemic.</h3>
     </section>
+    <br>
 
-    <section class="first_row" style="width: 500px; height: 300px; position: relative; margin-left: 5%">
-
-        <canvas id="bar-chart" width=10" height="5"></canvas>
-
-
-        <script>
-
-            new Chart(document.getElementById("bar-chart"), {
-                type: 'bar',
-                data: {
-                    labels: ["France", "Spain", "Germany", "Italy"],
-                    datasets: [
-                        {
-                            label: "Total number of contamined (thousands)",
-                            backgroundColor: ["#123450", "#123400", "#123000", "#120000"],
-                            data: [120000, 130000, 119000, 170000]
-                        }
-                    ]
-                },
-                options: {
-                    legend: {display: false},
-                    title: {
-                        display: true,
-                        text: 'Total number of contamined (thousands)'
-                    },
-
-                    scales: {
-                        yAxes: [{
-                            ticks: { beginAtZero: true }
-                        }]
-                    }
-                }
-            });
-
-        </script>
-    </section>
-
-    <section class="first_row" style="width: 500px; height: 300px; position: relative; margin-left: 5%">
-
-        <canvas id="bar-chart2" width=10" height="5"></canvas>
+    <h3 class="title-covid">Overview on the situation all over the world:</h3>
+    <div class="grid">
+        <div class="first_row">
+            <canvas id="globalTotal"></canvas>
+        </div>
+        <div class="first_row">
+            <canvas id="globalPie"></canvas>
+        </div>
+        <div class="first_row">
+            <canvas id="globalCured"></canvas>
+        </div>
+        <div class="first_row">
+            <canvas id="globalDeath"></canvas>
+        </div>
+    </div>
 
 
-        <script>
+    <h3 class="title-covid">Details on the situation in France:</h3>
+    <div class="grid-2">
+        <section class="sec_row">
+            <canvas id="frTotal"></canvas>
+        </section>
 
-            new Chart(document.getElementById("bar-chart2"), {
-                type: 'bar',
-                data: {
-                    labels: ["France", "Spain", "Germany", "Italy"],
-                    datasets: [
-                        {
-                            label: "Total number of death (thousands)",
-                            backgroundColor: ["blue", "red", "black", "green"],
-                            data: [1, 2, 1.4, 3, 5]
-                        }
-                    ]
-                },
-                options: {
-                    legend: {display: false},
-                    title: {display: true, text: 'Total number of death in Europe (thousands)'},
-                    scales: {
-                        yAxes: [{
-                            ticks: { beginAtZero: true }
-                        }]
-                    }
-                }
+        <section class="sec_row">
+            <canvas id="frDeath"></canvas>
+        </section>
 
-            });
-        </script>
-    </section>
+        <section class="sec_row">
+            <canvas id="frCured"></canvas>
+        </section>
+    </div>
+
+    <h3 class="title-covid">Details on the situation in the USA (worst-affected country):</h3>
+
+    <div class ="grid-2">
+        <section class="sec_row">
+            <canvas id="usaTotal"></canvas>
+        </section>
+
+        <section class="sec_row">
+            <canvas id="usaDeath"></canvas>
+        </section>
+
+        <section class="sec_row"">
+            <canvas id="usaCured"></canvas>
+        </section>
+    </div>
+
+
+    <h3 class="title-covid">Details on the situation in Spain:</h3>
+
+    <div class ="grid-2">
+        <section class="sec_row">
+            <canvas id="spainTotal"></canvas>
+        </section>
+
+        <section class="sec_row">
+            <canvas id="spainDeath"></canvas>
+        </section>
+
+        <section class="sec_row"">
+            <canvas id="spainCured"></canvas>
+        </section>
+    </div>
+
 
 </main>
+
+
+
 
 <footer>
     <div id="globalFooter">
         <script>addGlobalFooter();</script>
-        </div>
+    </div>
 </footer>
 
+<script type="text/javascript" src="covid/franceData.js"></script>
+<script type="text/javascript" src="covid/globalData.js"></script>
+<script type="text/javascript" src="covid/usaData.js"></script>
+<script type="text/javascript" src="covid/spainData.js"></script>
 </body>
 </html>
