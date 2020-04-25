@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3308
--- Généré le :  sam. 25 avr. 2020 à 14:00
+-- Généré le :  sam. 25 avr. 2020 à 16:04
 -- Version du serveur :  8.0.18
 -- Version de PHP :  7.3.12
 
@@ -31,9 +31,9 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `article`;
 CREATE TABLE IF NOT EXISTS `article` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(512) COLLATE utf8_bin NOT NULL,
+  `title` varchar(127) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `content` text COLLATE utf8_bin NOT NULL,
-  `date` int(11) NOT NULL,
+  `date` date NOT NULL,
   `id_user` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_user` (`id_user`)
@@ -98,9 +98,9 @@ CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(32) COLLATE utf8_bin NOT NULL,
   `email` varchar(128) COLLATE utf8_bin NOT NULL,
-  `password` varchar(256) COLLATE utf8_bin NOT NULL,
-  `bio` varchar(512) COLLATE utf8_bin NOT NULL,
-  `xp` int(11) NOT NULL,
+  `password` varchar(512) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `bio` varchar(512) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `xp` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
