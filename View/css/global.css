@@ -146,16 +146,20 @@ footer {
     margin-bottom: 30px;
     margin-right: 30px;
     border: solid 1px #AAA;
-    padding: 25px;
+    padding-right: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #FFFFFF;
 }
 
+.sec_row h1, h2{
+    text-align: center;
+
+}
+
 canvas {
     width: 40%;
-    height: auto;
+    height: 300px;
     position : relative;
-    margin-left: 5%;
 }
 
 .grid {
@@ -176,11 +180,16 @@ canvas {
     grid-row-end: 2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 80%;
+    width: 95%;
     margin: auto;
+    padding-left: 10px;
 }
 .title-covid {
     margin-left: 10%;
+    margin-right: 10%;
+}
+#description{
+    text-align: center;
 }
 
 /************************ALL ARTICLE*************************/

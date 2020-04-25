@@ -19,14 +19,34 @@
 </header>
 
 <main>
-    <section id="description">
-        <h1 style="text-align: center">Welcome!</h1>
-        <h3 style="text-align: center; margin-left: 10%; margin-right: 10%">This page is a dashboard containing some
+    <section id="description" class="title-covid">
+        <h1>Welcome!</h1>
+        <h3 style="">This page is a dashboard containing some
             graphs, charts and histogram. You may find here the latest data about the evolution of the pandemic.</h3>
+        <h5>Last updates : May 20th, 2020</h5>
     </section>
     <br>
 
     <h3 class="title-covid">Overview on the situation all over the world:</h3>
+
+    <div class ="grid-2">
+
+        <section class="sec_row">
+            <h1>Total cases :</h1>
+            <h2 id="totalCovid"></h2>
+        </section>
+        <section class="sec_row">
+            <h1>Total deaths :</h1>
+            <h2 id="deathCovid"></h2>
+        </section>
+        <section class="sec_row">
+            <h1>Total cured :</h1>
+            <h2 id="curedCovid"></h2>
+        </section>
+    </div>
+
+    <h3 class="title-covid">Details on the principle countries affected:</h3>
+
     <div class="grid">
         <div class="first_row">
             <canvas id="globalTotal"></canvas>
@@ -54,7 +74,7 @@
         </section>
 
         <section class="sec_row">
-            <canvas id="frCured"></canvas>
+            <canvas id="frDailyCases"></canvas>
         </section>
     </div>
 
@@ -70,26 +90,10 @@
         </section>
 
         <section class="sec_row"">
-            <canvas id="usaCured"></canvas>
+            <canvas id="usaDailyCases"></canvas>
         </section>
     </div>
 
-
-    <h3 class="title-covid">Details on the situation in Spain:</h3>
-
-    <div class ="grid-2">
-        <section class="sec_row">
-            <canvas id="spainTotal"></canvas>
-        </section>
-
-        <section class="sec_row">
-            <canvas id="spainDeath"></canvas>
-        </section>
-
-        <section class="sec_row"">
-            <canvas id="spainCured"></canvas>
-        </section>
-    </div>
 
 
 </main>
@@ -104,8 +108,8 @@
 </footer>
 
 <script type="text/javascript" src="covid/franceData.js"></script>
-<script type="text/javascript" src="covid/globalData.js"></script>
+<script type="text/javascript" src="covid/countriesData.js"></script>
 <script type="text/javascript" src="covid/usaData.js"></script>
-<script type="text/javascript" src="covid/spainData.js"></script>
+<script type="text/javascript" src="covid/globalData.js"></script>
 </body>
 </html>
