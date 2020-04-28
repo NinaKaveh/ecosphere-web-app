@@ -1,11 +1,11 @@
 function addGlobalHeader(){
     $(function(){
-        $("#globalHeader").load("global_header.html");
+        $("#globalHeader").load("View/global_header.html");
     });
 }
 function addGlobalFooter(){
     $(function(){
-        $("#globalFooter").load("global_footer.html");
+        $("#globalFooter").load("View/global_footer.html");
     });
 }
 function addUserHeader(){
