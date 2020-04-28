@@ -1,29 +1,29 @@
 var countries = {
     "Global": [{
         "name": "USA",
-        "tot": 1,
-        "cured": 0,
-        "death": 0
+        "tot":200001,
+        "cured": 12220,
+        "death": 3430
     }, {
         "name": "Spain",
-        "tot": 10,
-        "cured": 10,
-        "death": 0
+        "tot": 133435,
+        "cured":34410,
+        "death": 3650
     }, {
         "name": "Italy",
-        "tot": 14,
-        "cured": 10,
-        "death": 5
+        "tot": 134534,
+        "cured": 13430,
+        "death":34345
     }, {
         "name": "Germany",
-        "tot": 11,
-        "cured": 10,
-        "death": 5
+        "tot": 133431,
+        "cured": 13430,
+        "death": 534
     }, {
         "name": "France",
-        "tot": 11,
-        "cured": 10,
-        "death": 7
+        "tot": 110000,
+        "cured": 13430,
+        "death": 7545
     }]
 };
 var labels = countries.Global.map(function(e) {
@@ -88,7 +88,13 @@ var config4 = {
         datasets: [{
             label: 'Total contamined',
             data: total,
-            backgroundColor: ["#123450", "#123400", "#123000", "#120000","#0077cc"],
+            backgroundColor: [
+                'rgba(135,135,135,0.8)',
+                'rgba(36,95,135,0.8)',
+                'rgba(92,52,135,0.8)',
+                'rgba(50,135,135,0.8)',
+                'rgba(135,52,83,0.8)',
+                'rgba(135,84,35,0.8)'],
         }]
     }
 };
