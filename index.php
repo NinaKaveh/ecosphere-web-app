@@ -27,22 +27,24 @@
         <!-- Open a pop up on click -->
         <table>
             <tr>
+                <?php require("Controller/login-check.php"); ?>
                 <td>Want to sign up?</td>
                 <td>
                     <button class="button" onclick="openLoginForm()">Login</button>
                     <div class="form-popup" id="loginForm">
-                        <form action="/Controller/login.php" class="form-container">
-                            <h1>Login</h1>
+                        <form method="POST" action="" action="/Controller/login-check.php" class="form-container">
                             <?php
-                            if (isset($erreur)) {
-                                echo "<span color='red'>" .$erreur. "</span>";}
+                            if(isset($error_login)) {
+                                echo '<font color='.$errorColor.'>'.$error_login."</font>";
+                            }
                             ?>
-                            <label for="email"><b>Email</b></label>
-                            <input type="email" placeholder="Enter Email" name="email" required>
+                            <h1>Login</h1>
+                            <label for="email_login"><b>Email</b></label>
+                            <input type="email" placeholder="Enter Email" name="email_login" required>
                             <label for="psw"><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" name="psw" required>
-                            <button type="submit" class="btn">Login</button>
-                            <button name="login" type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                            <button type="submit" name="login" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
                         </form>
                     </div>
                 </td>
@@ -57,8 +59,8 @@
                     <div class="form-popup" id="registerForm">
                         <form method="POST" action="" class="form-container">
                             <?php
-                            if(isset($erreur)) {
-                                echo '<font color='.$erreurColor.'>'.$erreur."</font>";
+                            if(isset($error)) {
+                                echo '<font color='.$errorColor.'>'.$error."</font>";
                             }
                             ?>
                             <h1>Register</h1>
@@ -93,7 +95,8 @@
                     </div>
 
                 </td>
-                <?php if(isset($erreur)) {echo '<script type="text/javascript">', 'openRegisterForm();', '</script>';}?>
+                <?php if(isset($error)) {echo '<script type="text/javascript">', 'openRegisterForm();', '</script>';}?>
+                <?php if(isset($error_login)) {echo '<script type="text/javascript">', 'openLoginForm();', '</script>';}?>
             </tr>
         </table>
     </section>
