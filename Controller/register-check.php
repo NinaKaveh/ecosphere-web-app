@@ -5,7 +5,6 @@ try{
 } catch (Exception $e) {
 	die('Erreur : ' . $e->getMessage());
 	echo '<h1>CE QUI EST ECRIT AU DESSUS C EST PAS GRAVE C EST POUR LE REGISTER POPUP</h1>';
-
 }
 
 
@@ -47,17 +46,20 @@ if(isset($_POST['registerForm'])) {
 								$reqIdUser->bindParam(":mail",$mail);
 								$userexist = $reqIdUser->execute();
 
-								$erreurColor = "green";
+								$errorColor = "green";
 
 								$userinfo = $reqIdUser->fetch();
 
 								session_start();
-								$_SESSION['id'] = $userinfo['id'];
-								$_SESSION['email'] = $userinfo['email'];
-								$_SESSION['name'] = $userinfo['name'];
-								$erreurColor = "blue";
+                                $_SESSION['id'] = $userinfo['id'];
+                                $_SESSION['name'] = $userinfo['name'];
+                                $_SESSION['email'] = $userinfo['email'];
+                                $_SESSION['password'] = $userinfo['password'];
+                                $_SESSION['bio'] = $userinfo['bio'];
+                                $_SESSION['xp'] = $userinfo['xp'];
+								$errorColor = "blue";
 
-								$erreur = "Votre compte a bien été créé ! <a href=\"../index.php\">Me connecter</a>";
+								$error = "Votre compte a bien été créé ! <a href=\"../index.php\">Me connecter</a>";
 
 								$name = "";
 								$mail = "";
@@ -66,19 +68,19 @@ if(isset($_POST['registerForm'])) {
 								$password = "";
 
 							}
-							else {$erreur = "Vos mots de passes ne correspondent pas !";$erreurColor = "red";}
+							else {$error = "Vos mots de passes ne correspondent pas !";$errorColor = "red";}
 					}
-					else {$erreur = "Cette adresse e-mail est déjà utilisée !";$erreurColor = "red";}
+					else {$error = "Cette adresse e-mail est déjà utilisée !";$errorColor = "red";}
 
 				}
-				else {$erreur = "Votre adresse mail n'est pas valide !";$erreurColor = "red";}
+				else {$error = "Votre adresse mail n'est pas valide !";$errorColor = "red";}
 
 			}
-			else {$erreur = "Vos adresses mail ne correspondent pas !";$erreurColor = "red";}
+			else {$error = "Vos adresses mail ne correspondent pas !";$errorColor = "red";}
 
 
 	}
-	else {$erreur = "Tous les champs doivent être complétés !" ;$erreurColor = "red";}
+	else {$error = "Tous les champs doivent être complétés !" ;$errorColor = "red";}
 
 }
 
