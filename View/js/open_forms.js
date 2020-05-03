@@ -1,6 +1,6 @@
 function openLoginForm() {
-    document.getElementById("loginForm").style.display = "block";
     closeRegisterForm()
+    document.getElementById("loginForm").style.display = "block";
 }
 
 function closeLoginForm() {
@@ -8,8 +8,8 @@ function closeLoginForm() {
 }
 
 function openRegisterForm() {
-    document.getElementById("registerForm").style.display = "block";
     closeLoginForm()
+    document.getElementById("registerForm").style.display = "block";
 }
 
 function closeRegisterForm() {
