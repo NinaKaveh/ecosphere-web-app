@@ -49,39 +49,51 @@
             </tr>
 
             <tr>
+                <?php require("Controller/register-check.php"); ?>
                 <td>Want to register?</td>
+
                 <td>
                     <button class="button" onclick="openRegisterForm()">Register</button>
                     <div class="form-popup" id="registerForm">
-                        <form class="form-container">
-                            <?php require("Controller/register.php"); ?>
+                        <form method="POST" action="" class="form-container">
+                            <?php
+                            if(isset($erreur)) {
+                                echo '<font color='.$erreurColor.'>'.$erreur."</font>";
+                            }
+                            ?>
                             <h1>Register</h1>
                             <label for="lname"><b>Name</b></label>
                             <input type="text" placeholder="Enter Lastname" name="name" required
                                    value="<?php if (isset($name)) {
                                        echo $name;
                                    } ?>">
+                            <label for="mail"><b>mail</b></label>
+                            <input type="text" placeholder="Enter Email" name="mail" required
+                                   value="<?php if (isset($mail)) {
+                                       echo $mail;
+                                   } ?>">
                             <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="email" required
+                            <input type="text" placeholder="Enter Email again" name="email" required
                                    value="<?php if (isset($email)) {
                                        echo $email;
                                    } ?>">
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required
-                                   value="<?php if (isset($psw)) {
-                                       echo $psw;
+                            <label for="pass"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="pass" required
+                                   value="<?php if (isset($pass)) {
+                                       echo $pass;
                                    } ?>">
-                            <label for="psw2"><b>Confirm password</b></label>
-                            <input type="password" placeholder="Enter Password again" name="psw2" required
-                                   value="<?php if (isset($psw2)) {
-                                       echo $psw2;
+                            <label for="password"><b>Confirm password</b></label>
+                            <input type="password" placeholder="Enter Password again" name="password" required
+                                   value="<?php if (isset($password)) {
+                                       echo $password;
                                    } ?>">
-                            <button type="submit" class="btn">Register</button>
+                            <button type="submit" name="registerForm" class="btn">Register</button>
                             <button type="button" class="btn cancel" onclick="closeRegisterForm()">Close</button>
                         </form>
                     </div>
 
                 </td>
+                <?php if(isset($erreur)) {echo '<script type="text/javascript">', 'openRegisterForm();', '</script>';}?>
             </tr>
         </table>
     </section>
