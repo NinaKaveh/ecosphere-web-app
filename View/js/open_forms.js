@@ -1,5 +1,6 @@
 function openLoginForm() {
     document.getElementById("loginForm").style.display = "block";
+    closeRegisterForm()
 }
 
 function closeLoginForm() {
@@ -8,6 +9,7 @@ function closeLoginForm() {
 
 function openRegisterForm() {
     document.getElementById("registerForm").style.display = "block";
+    closeLoginForm()
 }
 
 function closeRegisterForm() {
