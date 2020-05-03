@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="View/css/global.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script type="text/javascript" src="View/js/include_header_footer.js"></script>
     <script type="text/javascript" src="View/js/open_forms.js"></script>
 </head>
 <body>
 <header>
     <div id="globalHeader">
-        <script>addGlobalHeader();</script>
+        <script>
+            $(function () {
+                $("#globalHeader").load("View/global_header.html");
+            });
+        </script>
     </div>
 </header>
 
@@ -34,8 +37,8 @@
                     <div class="form-popup" id="loginForm">
                         <form method="POST" action="" action="/Controller/login-check.php" class="form-container">
                             <?php
-                            if(isset($error_login)) {
-                                echo '<font color='.$errorColor.'>'.$error_login."</font>";
+                            if (isset($error_login)) {
+                                echo '<font color=' . $errorColor . '>' . $error_login . "</font>";
                             }
                             ?>
                             <h1>Login</h1>
@@ -59,8 +62,8 @@
                     <div class="form-popup" id="registerForm">
                         <form method="POST" action="" class="form-container">
                             <?php
-                            if(isset($error)) {
-                                echo '<font color='.$errorColor.'>'.$error."</font>";
+                            if (isset($error)) {
+                                echo '<font color=' . $errorColor . '>' . $error . "</font>";
                             }
                             ?>
                             <h1>Register</h1>
@@ -95,8 +98,12 @@
                     </div>
 
                 </td>
-                <?php if(isset($error)) {echo '<script type="text/javascript">', 'openRegisterForm();', '</script>';}?>
-                <?php if(isset($error_login)) {echo '<script type="text/javascript">', 'openLoginForm();', '</script>';}?>
+                <?php if (isset($error)) {
+                    echo '<script type="text/javascript">', 'openRegisterForm();', '</script>';
+                } ?>
+                <?php if (isset($error_login)) {
+                    echo '<script type="text/javascript">', 'openLoginForm();', '</script>';
+                } ?>
             </tr>
         </table>
     </section>
@@ -104,7 +111,11 @@
 
 <footer>
     <div id="globalFooter">
-        <script>addGlobalFooter();</script>
+        <script>
+            $(function () {
+                $("#globalFooter").load("View/global_footer.html");
+            });
+        </script>
     </div>
 </footer>
 </body>
