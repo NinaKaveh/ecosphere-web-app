@@ -90,6 +90,65 @@
 
     </div>
 
+    <h3 class="title-allArticle">Exemple  articles</h3>
+
+    <div class ="grid-article">
+        <section class="article_row">
+
+            <h4 style="text-align: center">The title is very important to set in an article as you know.</h4>
+
+            <p class="preview_article">Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus et magnis dis parturient montes nascetur</p>
+
+            <a href="#">Continue reading...</a>
+
+            <p class="author_article">
+                Author : Yanis KETTOU
+                <span>Date : 16/04/2020</span>
+            </p>
+
+        </section>
+
+        <section class="article_row">
+
+            <h4 style="text-align: center">The title is very important to set in an article as you know.</h4>
+
+            <p class="preview_article">Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus et magnis dis parturient montes nascetur</p>
+
+            <a href="#">Continue reading...</a>
+
+            <p class="author_article">
+                Author : Yanis KETTOU
+                <span>Date : 16/04/2020</span>
+            </p>
+
+        </section>
+
+        <section class="article_row">
+            <h4 style="text-align: center">The title is very important to set in an article.</h4>
+            <p class="preview_article">The is a little preview an the article which can be filled up with a maximum of 128 characters.</p>
+            <a href="#">Continue reading...</a>
+        </section>
+
+        <section class="article_row">
+            <h4 style="text-align: center">The title is very important to set in an article.</h4>
+            <p class="preview_article">The is a little preview an the article which can be filled up with a maximum of 128 characters.</p>
+            <a href="#">Continue reading...</a>
+        </section>
+
+        <section class="article_row">
+            <h4 style="text-align: center">The title is very important to set in an article.</h4>
+            <p class="preview_article">The is a little preview an the article which can be filled up with a maximum of 128 characters.</p>
+            <a href="#">Continue reading...</a>
+        </section>
+
+        <section class="article_row">
+            <h4 style="text-align: center">The title is very important to set in an article.</h4>
+            <p class="preview_article">The is a little preview an the article which can be filled up with a maximum of 128 characters.</p>
+            <a href="#">Continue reading...</a>
+        </section>
+
+    </div>
+
 </main>
 
 
