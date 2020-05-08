@@ -235,3 +235,68 @@ canvas {
 .author_article span {
     float: right;
 }
+
+/**************** ABOUT *******************/
+
+.history {
+    color: #ACCCD0;
+    font-family: Apple Chancery, cursive;
+}
+
+.team {
+    color: #ACCCD0;
+    font-family: Snell Roundhand, cursive;
+}
+
+.titlehis {
+    font-weight: bold;
+    color: #C8D5D7;
+    font-family: Verdana, sans-serif;
+}
+
+/************* PRODUCT ***************/
+
+.titlepro {
+    font-weight: lighter;
+    color : dimgrey;
+    font-family: Verdana, sans-serif;
+}
+
+.product {
+    color: darkgrey;
+}
+
+/************ HELP ************/
+.question {
+    font-weight: bold;
+    color : #111e84;
+}
+
+.reponse {
+    color: darkgrey;
+}
+
+/************ USE **********/
+.titleuse {
+    font-weight: bold;
+    color : black;
+}
+
+.Access {
+    font-weight: lighter;
+    color : dimgrey;
+}
+
+.interm {
+    font-weight: bold;
+    color : darkgrey;
+}
+
+.cond2 {
+    color: #AAAAAA;
+}
+
+.cond1 {
+    font-weight: lighter;
+    color : dimgrey;
+}
