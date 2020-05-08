@@ -8,49 +8,77 @@
 </head>
 <body>
 <header>
-    <div id="userHeader">
-        <script>addUserHeader();</script>
+    <div id="globalHeader">
+        <script>addGlobalHeader();</script>
     </div>
 </header>
 
-<main>
-    <div id="titlehis">
-        <h3>The history of the team</h3>
-    </div>
+<main class="panel">
+    <h1>EcoSphere</h1>
+    <hr/>
+    <blockquote>
+        <p>
+            Ecosphere is a website, more exactly a blog. It should allow registered users to publish articles related to
+            the environment.
+            These articles can be published by professionals as well as individuals.
+            Their reading will be open to registered members of the ecosphere blog as well as visitors to the website.
+            The aim is to allow people to take an interest in the environment by reading articles for free and thus,
+            perhaps, to have the desire to publish an article on this blog to defend their point of view on the
+            environment.
+            This website is therefore a way to defend these convictions as well as to share with as many people as
+            possible the beauties of this world that are in danger today.
+        </p>
+    </blockquote>
 
-    <div id="history">
-        <p>Our team was born in 2019. It was created at the same time as the EcoSphere project.
+    <h3>The history of the team</h3>
+    <blockquote>
+        <p>
+            Our team was born in 2019. It was created at the same time as the EcoSphere project.
             It brings together three students from ISEP, a digital engineering school.
-            This project is then a study project in BAC+4 in the field of IS architecture.</p>
-    </div>
+            This project is then a study project in BAC+4 in the field of IS architecture.
+        </p>
 
-    <div id="team">
-        <h2>Yanis KETTOU</h2>
-        <p>Yanis is a student of cybersecurity courses.</p>
-        <h2>Nina KAVEH</h2>
-        <p>Nina is a student of SI courses.</p>
-        <h2>Julie CAUDROIT</h2>
-        <p>Julie is a student of cybersecurity courses.</p>
-        <h2>The team</h2>
-        <p>Each person's two educational backgrounds allow the team to carry out this project at the same time by
+    </blockquote>
+
+
+    <h3>Yanis KETTOU</h3>
+    <blockquote>
+        <p>
+            Yanis is a student of cybersecurity courses.
+        </p>
+    </blockquote>
+
+    <h3>Nina KAVEH</h3>
+    <blockquote>
+        <p>
+            Nina is a student of SI courses.
+        </p>
+    </blockquote>
+
+    <h3>Julie CAUDROIT</h3>
+    <blockquote>
+        <p>
+            Julie is a student of cybersecurity courses.
+        </p>
+    </blockquote>
+
+    <h3>The team</h3>
+    <blockquote>
+        <p>
+            Each person's two educational backgrounds allow the team to carry out this project at the same time by
             advancing with each person's knowledge.
             Although some are more at ease with programming, each one tries at his own level to make the project viable
             and deliver a website with high expectations.
         </p>
-
-    </div>
+    </blockquote>
 </main>
 
 
-
-
-
-
-    <footer>
-        <div id="userFooter">
-            <script>addUserFooter();</script>
-        </div>
-    </footer>
+<footer>
+    <div id="globalFooter">
+        <script>addGlobalFooter();</script>
+    </div>
+</footer>
 
 
 </body>

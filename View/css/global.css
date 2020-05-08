@@ -33,6 +33,32 @@ main {
     padding-bottom: 40px;
 }
 
+.panel {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 1px #AAA;
+    padding-right: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FFFFFF;
+    width : 80%;
+    padding: 15px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color : #111e84;
+}
 /* --------------------------- Header ---------------------------------- */
 
 header a{
@@ -67,7 +93,10 @@ img#ecosphere_logo{
     margin: 6px 6px;
     cursor: pointer;
     border-radius: 10px;
-    float: right;
+}
+
+.button:hover {
+    color: cyan;
 }
 
 /* The popup form - hidden by default */
@@ -273,7 +302,7 @@ canvas {
 }
 
 .reponse {
-    color: darkgrey;
+    color: black;
 }
 
 /************ USE **********/
@@ -300,3 +329,4 @@ canvas {
     font-weight: lighter;
     color : dimgrey;
 }
+

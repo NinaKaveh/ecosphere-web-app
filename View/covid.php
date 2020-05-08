@@ -29,7 +29,7 @@
 
     <h3 class="title-covid">Overview on the situation all over the world:</h3>
 
-    <div class ="grid-2">
+    <div class="grid-2">
 
         <section class="sec_row">
             <h1>Total cases :</h1>
@@ -80,7 +80,7 @@
 
     <h3 class="title-covid">Details on the situation in the USA (worst-affected country):</h3>
 
-    <div class ="grid-2">
+    <div class="grid-2">
         <section class="sec_row">
             <canvas id="usaTotal"></canvas>
         </section>
@@ -89,16 +89,14 @@
             <canvas id="usaDeath"></canvas>
         </section>
 
-        <section class="sec_row"">
-            <canvas id="usaDailyCases"></canvas>
+        <section class="sec_row"
+        ">
+        <canvas id="usaDailyCases"></canvas>
         </section>
     </div>
 
 
-
 </main>
-
-
 
 
 <footer>

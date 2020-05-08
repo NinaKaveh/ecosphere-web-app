@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/global.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="js/include_header_footer.js"></script>
 </head>
+
 <body>
 <header>
-    <div id="userHeader">
-        <script>addUserHeader();</script>
+    <div id="globalHeader">
+        <script>
+            addGlobalHeader();
+        </script>
     </div>
 </header>
-
-<main>
-    <div id="titleuse">
-        <h3>Terms of use</h3>
-    </div>
-
-    <div id="cond1">
-        <p>The Ecosphere website located at www.ecosphere.com is a copyrighted work owned by Echosphere. Certain
+<main class="panel">
+    <div>
+        <h1>Terms of use</h1>
+        <hr/>
+        <p>
+            The Ecosphere website located at www.ecosphere.com is a copyrighted work owned by Ecosphere. Certain
             features of the Site may be subject to additional guidelines, conditions or rules, which will be posted on
             the Site in connection with such features.
 
@@ -32,26 +34,21 @@
 
             These Terms require the use of Section 10.2 arbitration on an individual basis to resolve disputes and also
             limit the remedies available to you in the event of a dispute. These Terms of Use have been created using
-            the Terms of Use Generator and the sample Privacy Policy.</p>
+            the Terms of Use Generator and the sample Privacy Policy.
+        </p>
     </div>
-
-
-
-
-    <div id="Access">
+    <div>
         <h2>Access to the site</h2>
-    </div>
-    <div id="cond2">
-        <p>Subject to these conditions. The Company grants you a non-transferable, non-exclusive, revocable, limited
-            license to access the Site solely for your personal, non-commercial use.</p>
-    </div>
-
-    <div id="interm">
-       Somes restrictions
-    </div>
-
-    <div id="cond2">
-        <p>The rights granted to you under these Terms are subject to the following restrictions: (a) you may not sell,
+        <p><b>Subject to these conditions:</b></p>
+        <p>
+            The Company grants you a non-transferable, non-exclusive, revocable, limited
+            license to access the Site solely for your personal, non-commercial use.
+        </p>
+        <p>
+            <b>Somes restrictions :</b>
+        </p>
+        <p>
+            The rights granted to you under these Terms are subject to the following restrictions: (a) you may not sell,
             rent, lease, lease, transfer, assign, distribute, host or otherwise commercially exploit the Site; (b) you
             may not modify, derivative works from, disassemble, reverse compile or reverse engineer any part of the
             Site; (c) you may not access the Site for the purpose of creating a similar or competitive website; and (d)
@@ -59,39 +56,32 @@
             republished, downloaded, displayed, posted, published or transmitted in any form or by any means, unless
             otherwise specified, any future versions, updates or other additions to the functionality of the Site will
             be subject to these Terms. All copyright and other proprietary notices on the Site must be retained on all
-            copies of the Site.</p>
-        <p>The Company reserves the right to modify, suspend or discontinue the Site with or without notice. You agree
+            copies of the Site.
+        </p>
+        <p>
+            The Company reserves the right to modify, suspend or discontinue the Site with or without notice. You agree
             that the Company shall not be liable to you or any third party for any change, interruption or termination
-            of the Site or any part thereof.</p>
-    </div>
-
-    <div id="interm">
-        No support or maintenance
-    </div>
-
-    <div id="cond2">
-        <p>You agree that the Company shall have no obligation to provide you with any support in connection with the
+            of the Site or any part thereof.
+        </p>
+        <p>
+            <b>No support or maintenance: </b>
+        </p>
+        <p>
+            You agree that the Company shall have no obligation to provide you with any support in connection with the
             Site.
         </p>
-        <p>Excluding any user content that you may provide, you are aware that all intellectual property rights,
+        <p>
+            Excluding any user content that you may provide, you are aware that all intellectual property rights,
             including copyrights, patents, trademarks and trade secrets, in the Site and its content belong to the
             Company or its suppliers. Note that these Terms and access to the Site do not confer upon you any right,
             title or interest in or to any intellectual property rights, except for the limited access rights expressed
-            in Section 2.1. The Company and its suppliers reserve all rights not granted in these Terms.</p>
+            in Section 2.1. The Company and its suppliers reserve all rights not granted in these Terms.
+        </p>
     </div>
-
-
-
-    <div id="Access">
+    <div>
         <h2>User Content</h2>
-    </div>
-
-    <div id="interm">
-        User content.
-    </div>
-
-    <div id="cond2">
-        <p>"User Content" means all information and content that a User submits to the Site. You are solely responsible
+        <p>
+            "User Content" means all information and content that a User submits to the Site. You are solely responsible
             for your User Content. You assume all risks associated with the use of your User Content. You hereby certify
             that your User Content does not violate our Acceptable Use Policy. You may not represent or imply to others
             that your User Content is provided, sponsored or endorsed in any way by the Company. Because you are solely
@@ -100,18 +90,16 @@
             notice. You are solely responsible for creating your own back-up copies of your User Content if you wish to
             do so.
         </p>
-        <p>You hereby grant the Company an irrevocable, non-exclusive, royalty-free, fully-paid, worldwide license to
+        <p>
+            You hereby grant the Company an irrevocable, non-exclusive, royalty-free, fully-paid, worldwide license to
             reproduce, distribute, publicly display and perform, prepare derivative works, incorporate into other works,
             and otherwise use and exploit your User Content, and grant sub-licenses of the foregoing rights, solely for
             the purpose of including your User Content on the Site. You hereby irrevocably waive any and all claims and
-            assertions of moral or attribution rights with respect to your User Content.</p>
-    </div>
-
-    <div id="interm">
-        Acceptable Use Policy.
-    </div>
-
-    <div id="cond2">
+            assertions of moral or attribution rights with respect to your User Content.
+        </p>
+        <p>
+            <b>Acceptable Use Policy:</b>
+        </p>
         <p>The following terms constitute our "Acceptable Use Policy": You agree not to use the Site to collect, upload,
             transmit, display or distribute any User Content that (i) infringes any third party right or any
             intellectual property or proprietary right; (ii) that is unlawful, harassing, abusive, tortious,
@@ -150,18 +138,11 @@
             control of any matter for which you are required to indemnify us.
         </p>
     </div>
-
-
-
-    <div id="Access">
+    <div>
         <h2>Third Party Links and Advertisements; Other Users</h2>
-    </div>
-
-    <div id="interm">
-        Third party links and advertising.
-    </div>
-
-    <div id="cond2">
+        <p>
+            <b>Third party links and advertising:</b>
+        </p>
         <p>The Site may contain links to third party websites and services and/or display advertisements for third
             parties. Such third party links and advertisements are not under the control of the Company and the Company
             is not responsible for third party links and advertisements. The Company provides these third-party links
@@ -172,13 +153,9 @@
             third party terms and policies apply, including the privacy and data collection practices of the third
             party.
         </p>
-    </div>
-
-    <div id="interm">
-        Other Users.
-    </div>
-
-    <div id="cond2">
+        <p>
+            <b>Other Users:</b>
+        </p>
         <p>Each user of the Site is solely responsible for all or part of his or her own User Content. Because we do not
             control User Content, you acknowledge and agree that we are not responsible for any User Content, whether
             provided by you or by others. You agree that the Company shall not be liable for any loss or damage incurred
@@ -195,14 +172,8 @@
             his or her settlement with the debtor. "
         </p>
     </div>
-
-
-
-    <div id="Access">
+    <div>
         <h2>Warnings</h2>
-    </div>
-
-    <div id="cond2">
         <p>The site is provided "as is" and "as available", and the company and our suppliers expressly disclaim all
             warranties and conditions of any kind, whether express, implied or statutory, including all warranties or
             conditions of merchantability, fitness for a particular purpose, title, quiet enjoyment, accuracy or
@@ -216,14 +187,8 @@
             limitation may not apply to you.
         </p>
     </div>
-
-
-
-    <div id="Access">
+    <div>
         <h2>Limitation of liability</h2>
-    </div>
-
-    <div id="cond2">
         <p>To the fullest extent permitted by law, in no event shall the Company or our suppliers be liable to you or
             any third party for any lost profits, lost data, costs of procurement of substitute products, or any
             indirect, consequential, exemplary, incidental, special or punitive damages arising out of or in connection
@@ -241,13 +206,9 @@
             Some jurisdictions do not allow the limitation or exclusion of liability for incidental or consequential
             damages, so the above limitation or exclusion may not apply to you.
         </p>
-    </div>
-
-    <div id="interm">
-        Term and Termination:
-    </div>
-
-    <div id="cond2">
+        <p>
+            <b>Term and Termination:</b>
+        </p>
         <p>Subject to this section, these Terms and Conditions will remain in full force and effect while you use the
             Site. We may suspend or terminate your rights to use the Site at any time for any reason in our sole
             discretion, including for any use of the Site in violation of these Terms. Upon termination of your rights
@@ -258,12 +219,8 @@
             provisions of these Terms will remain in effect: Sections 2 to 2.5, Section 3 and Sections 4 to 10.
         </p>
     </div>
-
-    <div id="Access">
+    <div>
         <h2>Copyright policy.</h2>
-    </div>
-
-    <div id="cond2">
         <p>The company respects the intellectual property of others and asks users of our site to do the same. As part
             of our site, we have adopted and implemented a policy that complies with copyright law that provides for the
             removal of all infringing material and the termination of users of our online site who are repeat infringers
@@ -276,14 +233,18 @@
             <li>your physical or electronic signature;</li>
             <li>identification of the copyrighted work(s) that you claim has been infringed;</li>
             <li>Identification of the material on our services that you claim has been infringed and that you request us
-                to remove;</li>
+                to remove;
+            </li>
             <li>information sufficient to permit us to locate the material;</li>
             <li>your address, telephone number and e-mail address;</li>
             <li>a statement that you have a good faith belief that use of the objectionable material in the manner
-                complained of is not authorized by the copyright owner, its agent, or the law;</li>
-            <li>and a statement that the information in the notification is accurate, and under penalty of perjury, that you
+                complained of is not authorized by the copyright owner, its agent, or the law;
+            </li>
+            <li>and a statement that the information in the notification is accurate, and under penalty of perjury, that
+                you
                 are either the owner of the copyright that is allegedly infringed or that you are authorized to act on
-                the copyright owner's behalf.</li>
+                the copyright owner's behalf.
+            </li>
         </ul>
         <p>
             Please note that, pursuant to 17 USC § 512 (f), any material misrepresentation of fact in a written
@@ -292,15 +253,13 @@
             infringement.
         </p>
     </div>
-
-
-
     <footer>
-        <div id="userFooter">
-            <script>addUserFooter();</script>
+        <div id="globalFooter">
+            <script>
+                addGlobalFooter();
+            </script>
         </div>
     </footer>
-
-
 </body>
+
 </html>

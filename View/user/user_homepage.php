@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../css/main.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="../js/include_header_footer.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/global.css"/>
     <title>Home Page</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
 
 <main>
     <section id="articles">
-        <h1>Hi <?php echo "username";?></h1>
+        <h1>Hi <?php echo "username"; ?></h1>
         <h3>Latest articles</h3>
         <br><br><br>
     </section>
