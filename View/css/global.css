@@ -273,9 +273,22 @@ canvas {
 }
 
 .reponse {
-    color: darkgrey;
+    color: black;
 }
 
+.panel-faq {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 1px #AAA;
+    padding-right: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FFFFFF;
+    width : 80%;
+    padding: 15px;
+
+}
 /************ USE **********/
 .titleuse {
     font-weight: bold;
