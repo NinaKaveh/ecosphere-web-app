@@ -4,7 +4,6 @@ try{
     include ("Model/connect.php");
 } catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
-    echo '<h1>CE QUI EST ECRIT AU DESSUS C EST PAS GRAVE C EST POUR LE REGISTER POPUP</h1>';
 }
 
 if(isset($_POST['login'])) {
@@ -27,7 +26,7 @@ if(isset($_POST['login'])) {
                 if(password_verify($password,$userinfo['password'])) {
 
                     $errorColor = "green";
-                    $error_login = "Connecting...<a href='../index.php'>Me connecter</a>";
+                    $error_login = "Connecting...";
                     session_start();
                     $_SESSION['id'] = $userinfo['id'];
                     $_SESSION['name'] = $userinfo['name'];
@@ -35,6 +34,8 @@ if(isset($_POST['login'])) {
                     $_SESSION['password'] = $userinfo['password'];
                     $_SESSION['bio'] = $userinfo['bio'];
                     $_SESSION['xp'] = $userinfo['xp'];
+                    header('Location: View/user/user_homepage.php');      
+                    exit();
                 }
                 else {
                     $errorColor = "red";
