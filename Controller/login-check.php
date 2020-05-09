@@ -39,7 +39,7 @@ if(isset($_POST['login'])) {
                 }
                 else {
                     $errorColor = "red";
-                    $error_login = "Mot passe incorrect.";
+                    $error_login = "Incorrect password.";
                 }
             }
             else {
