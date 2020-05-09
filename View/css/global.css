@@ -67,12 +67,28 @@ header a{
     font-size: 15px;
 }
 
+header button{
+    float: right;
+    display: inline-block;
+    padding: 10px 30px 10px 10px;
+    font-size: 15px;
+    color: white;
+    background-color: red;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
 header span{
     float: right;
     display: inline-block;
     padding: 10px 30px 10px 10px;
     font-size: 15px;
-    color: gold;
+    color: white;
+    background-color: red;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
 }
 
 img#isep_logo{
@@ -117,6 +133,12 @@ img#ecosphere_logo{
     background-color: white;
 }
 
+.form-container-newA {
+    max-width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password], .form-container input[type=email]{
     width: 90%;
@@ -125,6 +147,13 @@ img#ecosphere_logo{
     border: none;
     background: #f1f1f1;
 }
+.form-container-newA input[type=text], .form-container-newA textarea{
+     width: 90%;
+     padding: 10px;
+     margin: 5px 0 15px 0;
+     border: none;
+     background: #f1f1f1;
+ }
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container input[type=email]:focus {
@@ -143,6 +172,18 @@ img#ecosphere_logo{
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
+}
+.form-container-newA .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 10%;
+    margin:10px;
+    opacity: 0.8;
+
 }
 /* Add a red background color to the cancel button */
 .form-container .cancel {
@@ -222,6 +263,24 @@ canvas {
 }
 
 /************************ALL ARTICLE*************************/
+.newArticle{
+    background-color: #CFB53B;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 10%;
+    margin: 10px;
+    float: right;
+    opacity: 0.8;
+    transition-duration: 0.3s;
+}
+.newArticle:hover{
+    background-color: #DDB500;
+    box-shadow: darkgoldenrod 2px 2px 2px 2px;
+}
 .title-allArticle {
     margin-left: 10%;
     margin-top: 3%;
@@ -251,11 +310,11 @@ canvas {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition-duration: 0.4s;
 }
-.article_row a {
+.article_row btn {
     color: cadetblue;
     text-decoration: underline;
 }
-.article_row a:hover {
+.article_row btn:hover {
     color: lightskyblue;
 }
 .author_article {
@@ -264,7 +323,39 @@ canvas {
 .author_article span {
     float: right;
 }
+.article-popup {
+    display: none;
+    position: absolute;
+    width: 80%;
+    min-height: 400px;
+    top: 20%;
+    left: 10%;
+    border: 3px solid #f1f1f1;
+    z-index: 1;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 1;
+}
+.article-popup h1 {
+    text-align: center;
+    font-size: 24px;
+}
+.article-popup p {
+}
+.article-popup-closer {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 175%;
+    background-color: grey;
+    opacity: 0.4;
 
+}
 /**************** ABOUT *******************/
 
 .history {
