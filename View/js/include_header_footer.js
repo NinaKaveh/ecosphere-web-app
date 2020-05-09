@@ -10,7 +10,7 @@ function addGlobalFooter() {
 }
 function addUserHeader() {
     $(function () {
-        $("#userHeader").load("user_header.html");
+        $("#userHeader").load("user_header.php");
     });
 }
 function addUserFooter() {
