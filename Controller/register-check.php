@@ -57,7 +57,7 @@ if (isset($_POST['registerForm'])) {
                         $_SESSION['xp'] = $userinfo['xp'];
                         $errorColor = "blue";
 
-                        $error = "Votre compte a bien été créé !";
+                        $error = "Your account has been created !";
 
                         $name = "";
                         $mail = "";
@@ -66,27 +66,27 @@ if (isset($_POST['registerForm'])) {
                         $password = "";
 
                     } else {
-                        $error = "Vos mots de passes ne correspondent pas !";
+                        $error = "Passwords are not the same !";
                         $errorColor = "red";
                     }
                 } else {
-                    $error = "Cette adresse e-mail est déjà utilisée !";
+                    $error = "This e-mail address is already registered !";
                     $errorColor = "red";
                 }
 
             } else {
-                $error = "Votre adresse mail n'est pas valide !";
+                $error = "This e-mail isn't allowed on the website !";
                 $errorColor = "red";
             }
 
         } else {
-            $error = "Vos adresses mail ne correspondent pas !";
+            $error = "E-mails are not the same !";
             $errorColor = "red";
         }
 
 
     } else {
-        $error = "Tous les champs doivent être complétés !";
+        $error = "All the fields must be completed !";
         $errorColor = "red";
     }
 
