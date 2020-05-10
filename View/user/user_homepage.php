@@ -16,16 +16,16 @@
 
 <main>
     <section id="articles">
-        <h1>Hi <?php echo "username"; ?></h1>
+        <h1>Hi <?php $first_name = explode(' ',$_SESSION['name']); echo $first_name[0];?>,</h1>
         <h3>Latest articles</h3>
         <br><br><br>
     </section>
 
     <section id="user_points">
         <fieldset class="points">
-            <legend>Sum up:</legend>
-            <label>Name : <?php echo "username"; ?></label><br><br>
-            <label>Points : <?php echo "xxxxx"; ?></label><br><br>
+            <legend>Sum up :</legend>
+            <label>Name : <?php echo $_SESSION['name']; ?></label><br><br>
+            <label>Points : <?php echo $_SESSION['xp']; ?></label><br><br>
             <label for="search">Enter a name:</label>
             <input type="text" id="search" name="search_user"><br><br>
         </fieldset>
