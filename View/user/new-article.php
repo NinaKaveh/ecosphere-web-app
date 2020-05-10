@@ -8,9 +8,7 @@
 </head>
 <body>
 <header>
-    <div id="userHeader">
-        <script>addUserHeader();</script>
-    </div>
+    <?php require_once ("user_header.php"); ?>
 </header>
 
 <?php
