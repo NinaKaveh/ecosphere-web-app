@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<?php session_start()?>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
+<?php session_start();
+if(!empty($_SESSION['name'])) {?>
 <header>
     <div id="header">
         <img id="ecosphere_logo" src="../img/logo-paysage.png" alt="logo" width="195"/>
@@ -23,5 +19,8 @@
 
     </div>
 </header>
-</body>
-</html>
+<?php
+} else {
+    header('Location: http://ecosphere.fr/');
+    exit();
+}?>
