@@ -12,7 +12,6 @@
 </header>
 
 <?php
-session_start();
 try {
     include("../../Model/connect.php");
 } catch (Exception $e) {
