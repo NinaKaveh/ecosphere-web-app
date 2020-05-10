@@ -28,6 +28,7 @@ function openArticle(id) {
         x[i].style.display = 'block';
     }
     document.getElementById(id).style.display = "block";
+    document.getElementById("footer").style.opacity = "0.5";
     window.location.href = '#main';
     x[0].style.display = 'block';
 
@@ -43,4 +44,6 @@ function closeArticle() {
     for (i = 0; i < y.length; i++) {
         y[i].style.display = 'none';
     }
+    document.getElementById("footer").style.opacity = "1";
+
 }
