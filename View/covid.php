@@ -21,7 +21,7 @@
 <main>
     <section id="description" class="title-covid">
         <h1>Welcome!</h1>
-        <h3 style="">This page is a dashboard containing some
+        <h3>This page is a dashboard containing some
             graphs, charts and histogram. You may find here the latest data about the evolution of the pandemic.</h3>
         <h5>Last updates : May 20th, 2020</h5>
     </section>
@@ -89,8 +89,7 @@
             <canvas id="usaDeath"></canvas>
         </section>
 
-        <section class="sec_row"
-        ">
+        <section class="sec_row">
         <canvas id="usaDailyCases"></canvas>
         </section>
     </div>

@@ -1,29 +1,29 @@
 var countries = {
     "Global": [{
         "name": "USA",
-        "tot":200001,
-        "cured": 12220,
-        "death": 3430
+        "tot":1593486,
+        "cured": 370971,
+        "death": 94963
     }, {
         "name": "Spain",
-        "tot": 133435,
-        "cured":34410,
-        "death": 3650
+        "tot": 279524,
+        "cured":196958,
+        "death": 27888
     }, {
         "name": "Italy",
-        "tot": 134534,
+        "tot": 227364,
         "cured": 13430,
-        "death":34345
+        "death":32330
     }, {
         "name": "Germany",
-        "tot": 133431,
-        "cured": 13430,
-        "death": 534
+        "tot": 178531,
+        "cured": 158000,
+        "death": 8270
     }, {
         "name": "France",
-        "tot": 110000,
-        "cured": 13430,
-        "death": 7545
+        "tot": 181575,
+        "cured": 63354,
+        "death": 28132
     }]
 };
 var labels = countries.Global.map(function(e) {

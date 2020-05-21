@@ -86,44 +86,44 @@ var jsonfile = {
         "daily": 38958
     }, {
         "date": "27-04",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 1010356,
+        "death": 56795,
+        "daily": 23196
     }, {
         "date": "30-04",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 1095023,
+        "death": 63856,
+        "daily": 30829
     }, {
         "date": "04-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 1212835,
+        "death": 69921,
+        "daily": 24713
     }, {
         "date": "07-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 1292623,
+        "death": 76928,
+        "daily": 29531
     }, {
         "date": "10-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 1367638,
+        "death": 80787,
+        "daily": 20329
     }, {
         "date": "14-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 1457593,
+        "death": 87293,
+        "daily": 27246
     }, {
         "date": "17-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 1527664,
+        "death": 90978,
+        "daily": 19891
     }, {
         "date": "20-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 1592723,
+        "death": 94936,
+        "daily": 22140
     }]
 };
 var labels = jsonfile.USA.map(function(e) {

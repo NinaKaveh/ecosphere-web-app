@@ -1,7 +1,7 @@
 var global = {
-    "total": 1343535,
-    "cured": 34340,
-    "death": 0
+    "total": 5119004,
+    "cured": 2042948,
+    "death": 330399
 };
 var total = global.total;
 var cured = global.cured;

@@ -86,44 +86,44 @@ var jsonfile = {
         "daily": 1645
     }, {
         "date": "27-04",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 163273,
+        "death": 23293,
+        "daily": 1173
     }, {
         "date": "30-04",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 167178,
+        "death": 24376,
+        "daily": 758
     }, {
         "date": "04-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 169462,
+        "death": 25201,
+        "daily": 769
     }, {
         "date": "07-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 174791,
+        "death": 25987,
+        "daily": 600
     }, {
         "date": "10-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 176970,
+        "death": 26380,
+        "daily": 312
     }, {
         "date": "14-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 178870,
+        "death": 27425,
+        "daily": 810
     }, {
         "date": "17-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 179569,
+        "death": 28108,
+        "daily": 204
     }, {
         "date": "20-05",
-        "tot": 0,
-        "death": 0,
-        "daily": 0
+        "tot": 181575,
+        "death": 28132,
+        "daily": 766
     }]
 };
 var labels = jsonfile.France.map(function(e) {
