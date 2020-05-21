@@ -12,7 +12,7 @@ var countries = {
     }, {
         "name": "Italy",
         "tot": 227364,
-        "cured": 13430,
+        "cured": 134560,
         "death":32330
     }, {
         "name": "Germany",

@@ -24,6 +24,13 @@ a {
     text-decoration: none;
 }
 
+.redirection{
+    color: cadetblue;
+    margin-top: 10px;
+    border-bottom: 1px solid cadetblue;
+    display: inline-block;
+}
+
 #welcome{
     margin: 30px 180px 30px 180px;
 }

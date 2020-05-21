@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="View/css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="View/css/bootstrap.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="View/js/open_forms.js"></script>
+
 </head>
 <body>
 <header>
@@ -110,6 +112,17 @@
             </tr>
         </table>
     </section>
+
+    <div class="panel">
+        <h3>You will find bellow the latest data from the SARS-COV-2 pandemic in 5 of the worst affected countries.</h3>
+        <p>All these data are collected from the API
+            <a href="https://coronavirus-19-api.herokuapp.com/countries/." class="redirection">(click here to see)</a>.
+            This website collected all the data from every country.</p>
+        <table id="latest_covid_data" class="table table-bordered table-striped table-hover table-responsive"></table>
+        <p> If you want to see the evolution in some countries <a class="redirection" href="View/covid.php"> click
+                here</a></p>
+    </div>
+
 </main>
 
 <footer>
@@ -123,3 +136,7 @@
 </footer>
 </body>
 </html>
+
+<script type="text/javascript" src="View/js/fetch_covid_data.js"></script>
+
+
