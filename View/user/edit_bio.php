@@ -15,7 +15,7 @@ if (isset($_POST['update_bio'])) {
         }
     }
 }
-header('Location: http://ecosphere.fr/View/user/user_profile.php');
+header('Location: https://ecosphere.cf/View/user/user_profile.php');
 
 
 

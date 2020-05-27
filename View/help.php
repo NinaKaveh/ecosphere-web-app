@@ -61,7 +61,7 @@ if(!empty($_SESSION['name'])) {
         <h3 class="question"> Who to contact in case of problems ? </h3>
         <p class="reponse">
             If you have any problem with the platform (forget your password, unpublished article...), you can send a
-            mail to <a class="redirection" href="mailto:support@ecosphere.com">support@ecosphere.com</a>. You will be
+            mail to <a class="redirection" href="mailto:support@ecosphere.cf">support@ecosphere.cf</a>. You will be
             recontacted soon to reset your password. You can also call the support service : 01 02 03 04 05, available
             from Monday to Saturday - 8:00am to 6:00pm (0.30€ per minute + the price of a call).
         </p>

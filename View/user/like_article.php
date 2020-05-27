@@ -25,7 +25,7 @@ try { include("../../Model/connect.php"); } catch (Exception $e) { die('Erreur :
             }
         }
     }
-    header('Location: http://ecosphere.fr/View/user/all_articles.php#' . $article);
+    header('Location: https://ecosphere.cf/View/user/all_articles.php#' . $article);
 
 
 

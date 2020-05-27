@@ -1,6 +1,6 @@
 <?php
 session_start();
 session_destroy();
-header('Location: http://ecosphere.fr/');
+header('Location: https://ecosphere.cf/');
 
 ?>

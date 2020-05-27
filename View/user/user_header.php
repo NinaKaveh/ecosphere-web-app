@@ -22,6 +22,6 @@ if(!empty($_SESSION['name'])) {?>
 </header>
 <?php
 } else {
-    header('Location: http://ecosphere.fr/');
+    header('Location: https://ecosphere.cf/');
     exit();
 }?>
