@@ -85,7 +85,7 @@
             <a href="https://coronavirus-19-api.herokuapp.com/countries/." class="redirection">(click here to see)</a>.
             This website collected all the data from every country.</p>
         <table id="latest_covid_data" class="table table-bordered table-striped table-hover table-responsive"></table>
-        <p> If you want to see the evolution in some countries <a class="redirection" href="View/covid.php"> click
+        <p> If you want to see the evolution in some countries <a class="redirection" href="../covid.php"> click
                 here</a></p>
     </div>
     <script type="text/javascript" src="../js/fetch_covid_data.js"></script>
