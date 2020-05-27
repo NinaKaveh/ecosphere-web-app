@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../css/main.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="../js/include_header_footer.js"></script>
+    <script type="text/javascript" src="../js/open_forms.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/global.css"/>
     <title>Profile</title>
 </head>
@@ -14,10 +15,11 @@
     <?php require_once ("user_header.php"); ?>
 </header>
 
-<main>
+<main id="main">
     <section id="articles">
         <h1>Hi <?php $all_name = explode(' ',$_SESSION['name']); $first_name = $all_name[0];echo $first_name;?>,</h1>
         <h2>Top 3 <?php echo $first_name;?>'s article :</h2>
+        <div onclick="closeArticle()" class="article-popup-closer"></div>
         <div class="grid-article">
             <?php
             try {
