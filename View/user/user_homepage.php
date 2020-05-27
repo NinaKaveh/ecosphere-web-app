@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../css/main.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="../js/include_header_footer.js"></script>
+    <script type="text/javascript" src="../js/open_forms.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/global.css"/>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
 
@@ -17,13 +18,13 @@
     <?php require_once ("user_header.php"); ?>
 </header>
 
-<main>
+<main id="main">
 
 <h1>Hi <?php $first_name = explode(' ',$_SESSION['name']); echo $first_name[0];?>,</h1>
     <section id="articles">
         <h3>These are the 3 lastest articles,</h3>
 
-
+        <div onclick="closeArticle()" class="article-popup-closer"></div>
         <div class="grid-article">
 
         <?php
