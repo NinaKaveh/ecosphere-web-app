@@ -12,11 +12,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 </head>
 <body>
+
+<?php session_start();
+if(!empty($_SESSION['name'])) {
+?>
+<header>
+    <div id="header">
+        <img id="ecosphere_logo" src="img/logo-paysage.png" alt="logo" width="195"/>
+        <img id="isep_logo" src="img/logo-isep.png" alt="logo" width="60"/>
+
+        <div id="banner">
+            <nav class="navbar">
+                <a href="user/user_homepage.php">Home</a>
+                <a href="user/user_profile.php">Profile</a>
+                <a href="user/all_articles.php">All articles</a>
+                <a href="covid.php">COVID-19</a>
+                <span>Hello <?php echo $_SESSION['name'];?></span><button class="//button" onclick="window.location.href='user/logout.php'">Logout</button>
+            </nav>
+
+        </div>
+
+
+    </div>
+</header>
+<?php } else { ?>
 <header>
     <div id="globalHeader">
         <script>addGlobalHeader();</script>
     </div>
 </header>
+<?php } ?>
 
 <main>
     <section id="description" class="title-covid">
@@ -97,12 +122,30 @@
 
 </main>
 
-
+<?php if(!empty($_SESSION['name'])) {
+    ?>
+<footer>
+    <div id="userFooter">
+            <div id="footer">
+                <div id="banner">
+                    <nav class="footerNav">
+                        <a href="user/user_homepage.php">Home |</a>
+                        <a href="user/user_profile.php">Profile |</a>
+                        <a href="user/all_articles.php">All articles</a>
+                    </nav>
+                    <span class="footerNav">Copyright &copy; 2020</span>
+                </div>
+            </div>
+    </div>
+</footer>
+<?php } else { ?>
 <footer>
     <div id="globalFooter">
         <script>addGlobalFooter();</script>
     </div>
 </footer>
+<?php } ?>
+
 
 <script type="text/javascript" src="covid/franceData.js"></script>
 <script type="text/javascript" src="covid/countriesData.js"></script>
