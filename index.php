@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php session_start();
+if(!empty($_SESSION['name'])) {header('Location: http://ecosphere.fr/View/user/user_homepage.php');}?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
