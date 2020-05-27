@@ -27,13 +27,19 @@
                         $author = $article_data['name'];
                         $nbWords = str_word_count($article_data['content']);
 
+                        $like_req = $bdd->prepare("SELECT * FROM like_article WHERE id_article LIKE :id_article");
+                        $like_req->bindParam(":id_article",$idArticle);
+                        $like_req->execute();
+                        $like = $like_req->rowCount();
+
                         $article=array(
                             "id" => $idArticle,
                             "title" => $title,
                             "content" => $content,
                             "date" => $date,
                             "author" => $author,
-                            "words" => $nbWords
+                            "words" => $nbWords,
+                            "like" => $like
                         );
 
                         array_push($articles_api["article"], $article);
@@ -59,13 +65,19 @@
                         $author = $article_data['name'];
                         $nbWords = str_word_count($article_data['content']);
 
+                        $like_req = $bdd->prepare("SELECT * FROM like_article WHERE id_article LIKE :id_article");
+                        $like_req->bindParam(":id_article",$idArticle);
+                        $like_req->execute();
+                        $like = $like_req->rowCount();
+
                         $article=array(
                             "id" => $idArticle,
                             "title" => $title,
                             "content" => $content,
                             "date" => $date,
                             "author" => $author,
-                            "words" => $nbWords
+                            "words" => $nbWords,
+                            "like" => $like
                         );
 
                     }
@@ -80,9 +92,20 @@
                         $id_user = $user_data['id'];
                         $name = $user_data['name'];
                         $bio = $user_data['bio'];
-                        $xp = $user_data['xp'];
                         $nbWords = 0;
+                        $xp = 0;
 
+                        $like_req = $bdd->prepare("SELECT COUNT(like_article.id_user) FROM like_article INNER JOIN article ON like_article.id_article = article.id WHERE article.id_user LIKE :id_user");
+                        $like_req->bindParam(":id_user",$id_user);
+                        $like_req->execute();
+                        $nb_like = $like_req->fetchColumn();
+
+                        $article_req = $bdd->prepare("SELECT COUNT(*) FROM article WHERE article.id_user LIKE :id_user");
+                        $article_req->bindParam(":id_user",$id_user);
+                        $article_req->execute();
+                        $nb_article = $article_req->fetchColumn();
+
+                        $xp = $nb_like*10 + $nb_article*40;
                         $data2 = $bdd->prepare("SELECT article.content FROM article INNER JOIN user ON article.id_user = user.id WHERE user.id LIKE :id_user");
                         $data2->bindParam(":id_user",$id_user);
                         $data2->execute();
@@ -99,6 +122,7 @@
                             "bio" => $bio,
                             "xp" => $xp,
                             "nb_article" => $nbArticles,
+                            "nb_like" => (int)$nb_like,
                             "words" => $nbWords
                         );
 
@@ -120,8 +144,20 @@
                         $id_user = $user_data['id'];
                         $name = $user_data['name'];
                         $bio = $user_data['bio'];
-                        $xp = $user_data['xp'];
                         $nbWords = 0;
+                        $xp = 0;
+
+                        $like_req = $bdd->prepare("SELECT COUNT(like_article.id_user) FROM like_article INNER JOIN article ON like_article.id_article = article.id WHERE article.id_user LIKE :id_user");
+                        $like_req->bindParam(":id_user",$id_user);
+                        $like_req->execute();
+                        $nb_like = $like_req->fetchColumn();
+
+                        $article_req = $bdd->prepare("SELECT COUNT(*) FROM article WHERE article.id_user LIKE :id_user");
+                        $article_req->bindParam(":id_user",$id_user);
+                        $article_req->execute();
+                        $nb_article = $article_req->fetchColumn();
+
+                        $xp = $nb_like*10 + $nb_article*40;
 
                         $data2 = $bdd->prepare("SELECT article.content FROM article INNER JOIN user ON article.id_user = user.id WHERE user.id LIKE :id_user");
                         $data2->bindParam(":id_user",$id_user);
@@ -139,6 +175,7 @@
                             "bio" => $bio,
                             "xp" => $xp,
                             "nb_article" => $nbArticles,
+                            "nb_like" => (int)$nb_like,
                             "words" => $nbWords
                         );
 
@@ -146,13 +183,13 @@
                     http_response_code(200);
                     echo json_encode($user);
 
-                } else { echo '<b style="color:red;">Please verify your parameters...</b>';}
+                } else { echo '<b style="color:red;">Please verify your parameters...</b>'; http_response_code(400);}
 
-            } else { echo '<b style="color:red;">Access denied.</b>';}
+            } else { echo '<b style="color:red;">Access denied.</b>';http_response_code(403);}
 
-        } else { echo '<b style="color:red;">Invalid token</b>';}
+        } else { echo '<b style="color:red;">Invalid token</b>';http_response_code(403);}
 
-    } else { echo '<b style="color:red;">You need at least to specify the type and your token.</b>';}
+    } else { echo '<b style="color:red;">You need at least to specify the type and your token.</b>';http_response_code(400);}
 
 
 ?>
