@@ -331,6 +331,19 @@ canvas {
 .author_article span {
     float: right;
 }
+
+.footer_article {
+    color: grey;
+}
+.footer_article span {
+    float: right;
+}
+.dislike_article {
+    color: red;
+}
+.like_article {
+    color: green;
+}
 .article-popup {
     display: none;
     position: absolute;
