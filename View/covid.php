@@ -122,30 +122,11 @@ if(!empty($_SESSION['name'])) {
 
 </main>
 
-<?php if(!empty($_SESSION['name'])) {
-    ?>
-<footer>
-    <div id="userFooter">
-            <div id="footer">
-                <div id="banner">
-                    <nav class="footerNav">
-                        <a href="user/user_homepage.php">Home |</a>
-                        <a href="user/user_profile.php">Profile |</a>
-                        <a href="user/all_articles.php">All articles</a>
-                    </nav>
-                    <span class="footerNav">Copyright &copy; 2020</span>
-                </div>
-            </div>
-    </div>
-</footer>
-<?php } else { ?>
 <footer>
     <div id="globalFooter">
         <script>addGlobalFooter();</script>
     </div>
 </footer>
-<?php } ?>
-
 
 <script type="text/javascript" src="covid/franceData.js"></script>
 <script type="text/javascript" src="covid/countriesData.js"></script>
