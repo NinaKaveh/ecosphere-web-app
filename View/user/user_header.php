@@ -12,7 +12,8 @@ if(!empty($_SESSION['name'])) {?>
                 <a href="user_profile.php">Profile</a>
                 <a href="all_articles.php">All articles</a>
                 <a href="../covid.php">COVID-19</a>
-                <span>Hello <?php echo $_SESSION['name'];?></span><button class="//button" onclick="window.location.href='logout.php'">Logout</button>
+                <button class="//button" onclick="window.location.href='logout.php'">Logout</button>
+                <span>Hello <?php echo $_SESSION['name'];?></span>
             </nav>
 
         </div>
