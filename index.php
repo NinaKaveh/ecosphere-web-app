@@ -2,6 +2,7 @@
 if(!empty($_SESSION['name'])) {header('Location: https://ecosphere.cf/View/user/user_homepage.php');}?><!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Welcome to Ecosphere</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="View/css/global.css"/>
     <link rel="stylesheet" type="text/css" href="View/css/bootstrap.css"/>

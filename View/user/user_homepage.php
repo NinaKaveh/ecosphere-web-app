@@ -8,8 +8,6 @@
     <script type="text/javascript" src="../js/open_forms.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/global.css"/>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
-
-
     <title>Home Page</title>
 </head>
 
