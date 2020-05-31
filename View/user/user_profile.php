@@ -118,10 +118,10 @@
     <div id="footer">
         <div id="banner">
             <nav class="footerNav">
-                <a href="../index.php">Home |</a>
-                <a href="../View/about.php">Us |</a>
-                <a href="../View/help.php">Help |</a>
-                <a href="../View/term_of_use.php">Term of use</a>
+                <a href="../../index.php">Home |</a>
+                <a href="../about.php">Us |</a>
+                <a href="../help.php">Help |</a>
+                <a href="../term_of_use.php">Term of use</a>
             </nav>
             <span class="footerNav">Copyright &copy; 2020</span>
         </div>
