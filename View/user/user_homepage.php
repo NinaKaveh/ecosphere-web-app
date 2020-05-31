@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Ecosphere - Home Page</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/main.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -8,7 +9,6 @@
     <script type="text/javascript" src="../js/open_forms.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/global.css"/>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
-    <title>Home Page</title>
 </head>
 
 <body>
