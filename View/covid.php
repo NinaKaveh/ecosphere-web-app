@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Ecosphere - COVID-19 STATS</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/global.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
