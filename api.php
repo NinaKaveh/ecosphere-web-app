@@ -1,5 +1,5 @@
 <?php
-    try { include("connect.php"); } catch (Exception $e) { die('Erreur : ' . $e->getMessage()); }
+    try { include("Model/connect.php"); } catch (Exception $e) { die('Erreur : ' . $e->getMessage()); }
 
     if (isset($_GET['type']) AND isset($_GET['token'])) {
         $type = htmlspecialchars($_GET['type']);
