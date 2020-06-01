@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <title>Ecosphere - Help</title>
+    <link rel="icon"
+          type="image/png"
+          href="img/logo-icon.png">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/global.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
